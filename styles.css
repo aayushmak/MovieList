@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background for the body */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the wrapper */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for the wrapper */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+#page-banner h1.title {
+    font-size: 36px;
+    color: #6b9ac4; /* Pastel blue for the title */
+    margin: 0;
+    padding: 0;
+}
+
+#page-banner p {
+    font-size: 18px;
+    color: #87bba2; /* Pastel green for the subtitle */
+    margin: 5px 0;
+}
+
+#movie-list h2.title {
+    font-size: 24px;
+    color: #d2a4a4; /* Pastel pink for the section title */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #d2a4a4; /* Underline with pastel pink */
+    padding-bottom: 5px;
+}
+
+#movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#movie-list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for list items */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for list items */
+    transition: background-color 0.3s, border-left 0.3s; /* Smooth transition for hover effects */
+}
+
+#movie-list ul li:hover {
+    background-color: #e0f7fa; /* Slightly different background on hover */
+    border-left: 5px solid #6b9ac4; /* Slim left border with pastel blue on hover */
+}
+
+#movie-list ul li .name {
+    font-size: 18px;
+    color: #555; /* Dark gray for movie names */
+}
+
+#movie-list ul li .delete {
+    color: #d35d5d; /* Pastel red for delete text */
+    background-color: #ffebee; /* Light pink background */
+    border: 1px solid #d35d5d; /* Border matching the text color */
+    border-radius: 3px;
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+#movie-list ul li .delete:hover {
+    background-color: #d35d5d; /* Darker red on hover */
+    color: #fff; /* White text on hover */
+}
+
+#add-movie {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#add-movie input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+#add-movie button {
+    background-color: #6b9ac4; /* Pastel blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+#add-movie button:hover {
+    background-color: #5a8ba3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
